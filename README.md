@@ -1,15 +1,25 @@
-1. Crie a nova classe dentro do pacote `model` e utilize as anotações do JPA (`@Entity`, `@Id`, etc.).
-2. Crie uma interface correspondente dentro do pacote `repository`.
+
+### 1. Modelos (`Model`)
+* **Caminho:** `Demo -> src -> main -> java/com/exemple/locatehub -> model`
 
 ---
 
-1. **Alterar os dados de teste:** Se quiser modificar os itens ou as locações geradas automaticamente, altere as instruções dentro da classe `Teste.java` (`src/main/java/com/example/locatehub/Teste.java`).
-   
-2. **Rodar a aplicação:**
-   Abra a classe principal do projeto: `LocatehubOrmApplication.java`.
-   Clique no ícone de **Play (Run)** do IntelliJ para iniciar o servidor.
+## Organização de quem Fez cada Classe
 
-3. **Verificar no Banco de Dados:**
-   Abra o MySQL Workbench (ou o gerenciador de sua preferência) no schema `locatehuborm` e execute as consultas para verificar o mapeamento:
-   ```sql
-   SELECT * FROM tabela_criada;
+
+### Classes Java ORM (Model)
+| Classe | Descrição Breve | Desenvolvedor(a) Responsável |
+| :--- | :--- | :--- |
+| `Ativo.java` | Classe Pai/Principal dos ativos do sistema | João |
+| `AtivoAutomovel.java` | Classe filho/subclasse de automoveis | Gabi |
+| `AtivoItem.java` | Classe filho/subclasse de itens normais | Gabi |
+| `AtivoImovel.java` | Classe filho/subclasse de imoveis | Murilo |
+| `Avaliacao.java` | Classe de avaliação de itens cadastrados | Juliano |
+| `ListaDesejos.java` | Classe que coloca itens dentro lista de desejos do usuário | Juliano |
+| `User.java` | Classe Pai/Principal dos usuários do sistema | Joshua |
+| `UserLocador.java` | Classe filho/subclasse de usuários que colocam itens para alugar | Joshua |
+| `UserLocatario.java` | Classe filho/subclasse de usuários de alugam ativos | Murilo |
+| `Reserva.java` | Classe filho/subclasse de usuários de alugam ativos | João |
+
+
+
